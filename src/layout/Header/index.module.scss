@@ -1,0 +1,27 @@
+.header {
+  width: 100%;
+  background-color: #fff;
+  .header_top {
+    height: 60px;
+    line-height: 60px;
+    text-align: right;
+    padding: 0 40px;
+    border-bottom: 2px solid #1DA57A;
+  }
+  .header_botm {
+    position: relative;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 40px;
+    &::after {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      border-top: 8px solid rgb(255, 255, 255);
+      border-left: 8px solid rgba(0, 0, 0, 0);
+      border-right: 8px solid rgba(0, 0, 0, 0);
+      top: 40px;
+      left: 44px;
+    }
+  }
+}
